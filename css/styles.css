@@ -230,7 +230,7 @@ img {
   border-radius: 4px;
   /*outline: 1px solid yellow;*/
   margin-bottom: 30px;
-  background-size: contain;
+  /*background-size: contain;*/
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
