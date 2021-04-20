@@ -8,6 +8,7 @@
   --secondary-bg-color: #e5e5e5;
   --adress-text: rgb(255, 255, 255, 60%);
   --button-color: #f5f4fa;
+  --icon-color: #afb1b8;
 
   --main-fonts: "Roboto", sans-serif;
   --second-font: "Raleway", sans-serif;
@@ -114,9 +115,10 @@ img {
 .contact-header {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 
-.contact-header > .item + .item {
+.contact-header .item + .item {
   margin-left: var(--margin);
 }
 
@@ -125,11 +127,23 @@ img {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--additional-text-color);
+  padding: 0;
+  color: var(--icon-color);
+  background-color: var(--title-text-color);
 }
+
 .contact:hover,
-.contact:focus {
+.contact:focus .icon {
   color: var(--accent-text-color);
 }
+
+.icon {
+  fill: currentColor;
+}
+
+.icon {
+}
+
 /*Герой*/
 .hero {
   padding-top: 200px;
@@ -223,23 +237,23 @@ img {
   width: 270px;
 }
 
-.list-item::before {
+/* .list-item::before {
   display: block;
   content: "";
   height: 120px;
-  border-radius: 4px;
-  /*outline: 1px solid yellow;*/
-  margin-bottom: 30px;
-  /*background-size: contain;*/
+  border-radius: 4px; 
+  outline: 1px solid yellow;
+   margin-bottom: 30px; 
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #f5f4fa;
-}
+  background-color: #f5f4fa;   
+ } */
 
 /* іконки на секції */
-.icon-antena::before {
+/* .icon-antena::before {
   background-image: url("../img/icons/antenna\ 1.svg");
-}
+} 
 
 .icon-clock::before {
   background-image: url("../img/icons/clock\ 1.svg");
@@ -251,6 +265,17 @@ img {
 
 .icon-astronaut::before {
   background-image: url("../img/icons/astronaut\ 1.svg");
+ }  */
+
+.story {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--third-bg-color);
+  margin-bottom: var(--card-set-gap);
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
 }
 
 .list-item .text {
