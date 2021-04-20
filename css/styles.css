@@ -133,15 +133,12 @@ img {
 }
 
 .contact:hover,
-.contact:focus .icon {
+.contact:focus .connection-icon {
   color: var(--accent-text-color);
 }
 
-.icon {
+.connection-icon {
   fill: currentColor;
-}
-
-.icon {
 }
 
 /*Герой*/
