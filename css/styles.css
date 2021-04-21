@@ -8,6 +8,7 @@
   --secondary-bg-color: #e5e5e5;
   --adress-text: rgb(255, 255, 255, 60%);
   --button-color: #f5f4fa;
+  --bgc-svg: #f5f4fa;
   --icon-color: #afb1b8;
 
   --main-fonts: "Roboto", sans-serif;
@@ -133,12 +134,13 @@ img {
 }
 
 .contact:hover,
-.contact:focus .connection-icon {
+.contact:focus .icon-connection {
   color: var(--accent-text-color);
 }
 
-.connection-icon {
+.icon-connection {
   fill: currentColor;
+  margin-right: 10px;
 }
 
 /*Герой*/
@@ -327,6 +329,53 @@ img {
 
 .name-position .title-name {
   margin-bottom: 10px;
+}
+
+/* постійні клієнти */
+.regular-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.company-icon {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+
+.company-icon .client-company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: calc((100% - 6 * var(--card-set-gap)) / 6);
+  width: calc((100% - 6 * var(--card-set-gap)) / 6);
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.link-employees-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-color);
+}
+
+.client-company:hover,
+.client-company:focus {
+  border-color: var(--accent-text-color);
+}
+
+.client-company:focus,
+.client-company:hover .link-employees-icon {
+  border-color: var(--accent-text-color);
+}
+
+.client-icon {
+  fill: currentColor;
 }
 
 /* портфоліо */
