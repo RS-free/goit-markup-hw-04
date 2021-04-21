@@ -138,8 +138,19 @@ img {
   color: var(--accent-text-color);
 }
 
+/* .item:not(:last-child) {
+  margin-bottom: 10px;
+} */
+
+.contact-link {
+  display: flex;
+  align-items: center;
+}
+
 .icon-connection {
-  fill: currentColor;
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
   margin-right: 10px;
 }
 
@@ -275,6 +286,7 @@ img {
   width: 270px;
   height: 120px;
   border-radius: 4px;
+  /* stroke: #212121; */
 }
 
 .list-item .text {
@@ -312,7 +324,7 @@ img {
 
 /* команда */
 .team {
-  background-color: var(--third-bg-color);
+  background-color: var(---title-text-color);
 }
 
 .worker {
@@ -329,6 +341,46 @@ img {
 
 .name-position .title-name {
   margin-bottom: 10px;
+}
+
+/* соціальні мережі */
+/* .list-social-icons {
+  display: inlaine-flex;
+  align-items: center;
+} */
+
+/* .socials-item {
+  margin-left: 40px;
+} */
+
+.social-icons {
+  display: inline-flex;
+}
+
+.social-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icons-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-top: 16px;
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus .social-icons-svg {
+  background-color: red;
+}
+
+.social-icons-svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /* постійні клієнти */
@@ -369,13 +421,25 @@ img {
   border-color: var(--accent-text-color);
 }
 
+/* .social-icons-link:hover .social-icons-svg,
+.social-icons-link:focus .social-icons-svg {
+  fill: var(--icon-color);
+} */
+
 .client-company:focus,
-.client-company:hover .link-employees-icon {
+.client-company:hover {
   border-color: var(--accent-text-color);
+}
+
+.link-employees-icon:hover,
+.link-employees-icon:focus {
+  border-color: #2196f3;
 }
 
 .client-icon {
   fill: currentColor;
+  width: 160px;
+  height: 60px;
 }
 
 /* портфоліо */
