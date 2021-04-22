@@ -445,7 +445,7 @@ img {
 .client-icon {
   fill: var(--icon-color);
   width: 106px;
-  height: 60px;
+  /* height: 60px; */
 }
 
 /* портфоліо */
@@ -528,6 +528,8 @@ img {
   margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 1600px;
+  height: 252px;
 }
 
 .address {
@@ -555,11 +557,13 @@ img {
 }
 
 .accession {
-  display: block;
+  display: block-flex;
   width: 206px;
   height: 80px;
   left: 516px;
   top: 2751px;
+  margin-top: -128px;
+  margin-left: 516px;
 }
 
 .accession-title {
