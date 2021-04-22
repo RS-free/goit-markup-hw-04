@@ -25,7 +25,7 @@ body {
   font-family: var(--main-fonts);
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  background-color: #fff;
+  background-color: var(--title-text-color);
 }
 
 .list {
@@ -65,7 +65,7 @@ img {
   margin-right: auto;
 }
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
@@ -74,7 +74,7 @@ img {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-} */
+}
 
 .line {
   border-bottom: 1px solid #ececec;
@@ -140,7 +140,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--additional-text-color);
   padding: 0;
-  color: var(--icon-color);
   background-color: var(--title-text-color);
 }
 
@@ -159,9 +158,11 @@ img {
 }
 
 .icon-connection {
+  /* display: flex;
+  align-items: center; */
   width: 16px;
   height: 16px;
-  stroke: currentColor;
+  fill: currentColor;
   margin-right: 10px;
 }
 
@@ -258,26 +259,25 @@ img {
   width: 270px;
 }
 
+/* іконки на секції псевдоелемент*/
 /* .list-item::before {
   display: block;
   content: "";
   height: 120px;
-  border-radius: 4px; 
-  outline: 1px solid yellow;
-   margin-bottom: 30px; 
+  border-radius: 4px;
+  margin-bottom: 30px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #f5f4fa;   
- } */
+  background-color: #f5f4fa;
+} */
 
-/* іконки на секції */
-/* .icon-antena::before {
-  background-image: url("../img/icons/antenna\ 1.svg");
-} 
+/* .icon-antenna::before {
+  background-image: url("../img/icons/antenna.svg");
+}
 
 .icon-clock::before {
-  background-image: url("../img/icons/clock\ 1.svg");
+  background-image: url("../img/icons/clock.svg");
 }
 
 .icon-vector::before {
@@ -285,9 +285,10 @@ img {
 }
 
 .icon-astronaut::before {
-  background-image: url("../img/icons/astronaut\ 1.svg");
- }  */
+  background-image: url("../img/icons/astronaut.svg");
+} */
 
+/* іконки секцій зі спрайта */
 .story {
   display: flex;
   align-items: center;
@@ -297,7 +298,11 @@ img {
   width: 270px;
   height: 120px;
   border-radius: 4px;
-  /* stroke: #212121; */
+}
+
+.icon-picture {
+  width: 70px;
+  height: 70px;
 }
 
 .list-item .text {
@@ -355,6 +360,7 @@ img {
 }
 
 /* соціальні мережі */
+
 /* .list-social-icons {
   display: inlaine-flex;
   align-items: center;
