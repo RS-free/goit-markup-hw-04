@@ -65,6 +65,17 @@ img {
   margin-right: auto;
 }
 
+/* .visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+} */
+
 .line {
   border-bottom: 1px solid #ececec;
 }
@@ -368,19 +379,24 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: var(---title-text-color);
   margin-top: 16px;
 }
 
 .social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: var(--accent-text-color);
+}
+
+.social-icons-link:hover .social-icons-svg,
 .social-icons-link:focus .social-icons-svg {
-  background-color: red;
+  fill: var(--title-text-color);
 }
 
 .social-icons-svg {
   width: 20px;
   height: 20px;
-  fill: currentColor;
+  fill: var(--icon-color);
 }
 
 /* постійні клієнти */
@@ -401,25 +417,32 @@ img {
   align-items: center;
   justify-content: center;
   flex-basis: calc((100% - 6 * var(--card-set-gap)) / 6);
-  width: calc((100% - 6 * var(--card-set-gap)) / 6);
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
+  width: 170px;
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
 }
 
-.link-employees-icon {
+.company-icon:not)
+
+. .link-employees-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--icon-color);
 }
 
-.client-company:hover,
-.client-company:focus {
-  border-color: var(--accent-text-color);
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: var(--accent-text-color);
 }
+
+/* .link-employees-icon:hover,
+.link-employees-icon:focus {
+  border-color: var(--accent-text-color);
+} */
 
 /* .social-icons-link:hover .social-icons-svg,
 .social-icons-link:focus .social-icons-svg {
@@ -431,14 +454,19 @@ img {
   border-color: var(--accent-text-color);
 }
 
-.link-employees-icon:hover,
-.link-employees-icon:focus {
-  border-color: #2196f3;
+.client-company:hover .client-icon,
+.client-company:focus .client-icon {
+  fill: var(--accent-text-color);
 }
 
+/* .link-employees-icon:hover,
+.link-employees-icon:focus {
+  border-color: #2196f3;
+} */
+
 .client-icon {
-  fill: currentColor;
-  width: 160px;
+  fill: var(--icon-color);
+  width: 106px;
   height: 60px;
 }
 
