@@ -65,7 +65,7 @@ img {
   margin-right: auto;
 }
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
@@ -74,7 +74,7 @@ img {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-}
+} */
 
 .line {
   border-bottom: 1px solid #ececec;
@@ -96,6 +96,7 @@ img {
 .studio {
   color: var(--main-text-color);
 }
+
 /* навігація */
 .nav {
   margin-left: 93px;
@@ -113,16 +114,16 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   /*силка блочна та з внутрішніми відступами*/
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.site-nav .link.current {
+/* .site-nav .link.current {
   color: var(--accent-text-color);
-}
+} */
+
 /* контакти */
 .contact-header {
   display: flex;
@@ -141,6 +142,16 @@ img {
   color: var(--additional-text-color);
   padding: 0;
   background-color: var(--title-text-color);
+}
+
+.link-current:hover,
+.link.current:focus {
+  color: var(--accent-text-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-text-color);
 }
 
 .contact:hover,
@@ -222,6 +233,16 @@ img {
   letter-spacing: 0.06em;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.button:hover {
+  color: var(--title-text-color);
+  background-color: var(--accent-text-color);
+}
+
+.button:focus {
+  color: var(--title-text-color);
+  background-color: var(--accent-text-color);
 }
 
 /* секції */
@@ -438,8 +459,8 @@ img {
   color: var(--icon-color);
 }
 
-.client-company:focus,
-.client-company:hover {
+.client-company:hover,
+.client-company:focus {
   border-color: var(--accent-text-color);
 }
 
@@ -447,6 +468,11 @@ img {
 .client-company:focus .client-icon {
   fill: var(--accent-text-color);
 }
+
+/* .link-employees-icon:hover,
+.link-employees-icon:focus {
+  border-color: var(--accent-text-color);
+} */
 
 .client-icon {
   fill: var(--icon-color);
@@ -476,9 +502,14 @@ img {
   border-radius: 4px;
 }
 
-.portfolio-button:hover,
-:focus {
-  color: var(--accent-text-color);
+.portfolio-button:hover {
+  color: var(--title-text-color);
+  background-color: var(--accent-text-color);
+}
+
+.portfolio-button:focus {
+  color: var(--title-text-color);
+  background-color: var(--accent-text-color);
 }
 
 .portf-link-title {
