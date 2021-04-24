@@ -8,7 +8,6 @@
   --secondary-bg-color: #e5e5e5;
   --adress-text: rgb(255, 255, 255, 60%);
   --button-color: #f5f4fa;
-  --bgc-svg: #f5f4fa;
   --icon-color: #afb1b8;
 
   --main-fonts: "Roboto", sans-serif;
@@ -127,21 +126,11 @@ img {
 /* контакти */
 .contact-header {
   display: flex;
-  margin-left: auto;
   align-items: center;
+  margin-left: auto;
 }
-
 .contact-header .item + .item {
   margin-left: var(--margin);
-}
-
-.contact {
-  font-weight: 500;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: var(--additional-text-color);
-  padding: 0;
-  background-color: var(--title-text-color);
 }
 
 .link-current:hover,
@@ -154,25 +143,22 @@ img {
   color: var(--accent-text-color);
 }
 
-.contact:hover,
-.contact:focus .icon-connection {
-  color: var(--accent-text-color);
-}
-
-/* .item:not(:last-child) {
-  margin-bottom: 10px;
-} */
-
-.contact-link {
+.calm {
   display: flex;
   align-items: center;
+  padding: 0;
+  color: var(--icon-color);
+  background-color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--additional-text-color);
 }
-
-.icon-connection {
-  /* display: flex;
-  align-items: center; */
-  width: 16px;
-  height: 16px;
+.calm:hover,
+.calm:focus {
+  color: var(--accent-text-color);
+}
+.contact-icon {
   fill: currentColor;
   margin-right: 10px;
 }
@@ -196,7 +182,7 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../img/0_герой.jpg");
+    url("../images/0_герой.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: cover;
@@ -361,7 +347,7 @@ img {
 
 /* команда */
 .team {
-  background-color: var(---title-text-color);
+  background-color: var(--third-bg-color);
 }
 
 .worker {
@@ -427,57 +413,43 @@ img {
 }
 
 /* постійні клієнти */
-.regular-customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+/* .regular-customers {
+  padding-top: 92px;
+  padding-bottom: 92px;
+} */
 
-.company-icon {
+.information {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
 }
-
-.company-icon .client-company {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.information .item-icon {
   flex-basis: calc((100% - 6 * var(--card-set-gap)) / 6);
+  width: calc((100% - 6 * var(--card-set-gap)) / 6);
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
-  width: 170px;
-  height: 92px;
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
 }
 
-. .link-employees-icon {
+.icon-logotype {
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  padding: 16px 32px;
 }
 
-.client-company:hover,
-.client-company:focus {
+.icon-logotype:hover,
+.icon-logotype:focus {
   border-color: var(--accent-text-color);
+  color: var(--accent-text-color);
 }
-
-.client-company:hover .client-icon,
-.client-company:focus .client-icon {
-  fill: var(--accent-text-color);
-}
-
-/* .link-employees-icon:hover,
-.link-employees-icon:focus {
-  border-color: var(--accent-text-color);
-} */
-
 .client-icon {
-  fill: var(--icon-color);
+  fill: currentColor;
   width: 106px;
-  /* height: 60px; */
+  height: 60px;
 }
 
 /* портфоліо */
@@ -502,14 +474,47 @@ img {
   border-radius: 4px;
 }
 
-.portfolio-button:hover {
+.portfolio-button:hover,
+.portfolio-button:focus {
   color: var(--title-text-color);
   background-color: var(--accent-text-color);
 }
 
-.portfolio-button:focus {
-  color: var(--title-text-color);
-  background-color: var(--accent-text-color);
+.link-work {
+  display: flex;
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.picture-item {
+  display: flex;
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
+.link-work:hover,
+.link-work:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.example-thumb {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-information {
+  flex-grow: 1;
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .portf-link-title {
@@ -527,139 +532,86 @@ img {
   line-height: 1.8;
 }
 
-.link-cardset {
-  display: flex;
-}
-
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap));
-}
-
-.card-set-item {
-  display: flex;
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);
-}
-
-.card-set-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.card-set-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-}
-
-.card-content {
-  flex-grow: 1;
-  padding: 20px 24px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-}
-
-/* футер */
+/* ФУТЕР */
 .footer {
-  background-color: #2f303a;
+  width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #2f303a;
+}
+
+.footer > .conteiner {
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 1600px;
-  height: 252px;
-}
-
-.address {
-  color: var(--title-text-color);
-  line-height: 1.7;
-  font-style: inherit;
-  margin-top: 20px;
-}
-
-.address-item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.contacts-footer {
-  color: var(--adress-text);
-}
-
-.contacts-footer:hover,
-:focus {
-  color: var(--accent-text-color);
 }
 
 .logo-studio {
   color: var(--title-text-color);
 }
 
-.accession {
-  display: block-flex;
-  width: 206px;
-  height: 80px;
-  left: 516px;
-  top: 2751px;
-  margin-top: -128px;
-  margin-left: 516px;
+.address {
+  margin-top: 20px;
+  color: var(--title-text-color);
+  line-height: 1.7;
+  font-style: inherit;
 }
 
-.accession-title {
-  width: 145px;
-  height: 16px;
-  left: 516px;
-  top: 2751px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
+.address-item:hover,
+.address-item:focus {
+  color: var(--accent-text-color);
+}
+
+.contacts-footer {
+  color: var(--adress-text);
+}
+.contacts-footer:hover,
+.contacts-footer:focus {
+  color: var(--accent-text-color);
+}
+
+.general {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bloc {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+}
+.general > .bloc + .bloc {
+  margin-left: var(--card-set-gap);
+}
 .social-icons-list {
-  display: inline-flex;
+  display: flex;
+  background-color: inherit;
+  color: var(--title-text-color);
 }
-
-.social-icons-item-item {
-  margin-right: 10px;
+.social-icons-list > .social-icons-item-item + .social-icons-item-item {
+  margin-left: 10px;
 }
-
-.social-icons-link-accession {
+.accession {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  margin-top: 20px;
-  margin-bottom: 10px;
 }
-
-.social-icons-link-accession:hover,
-.social-icons-link-accession:focus {
+.accession:hover,
+.accession:focus {
   background-color: var(--accent-text-color);
 }
 
-.social-icons-link-accession .social-icons-svg-social,
-.social-icons-link-accession .social-icons-svg-social {
-  fill: var(--title-text-color);
+.bloc .title {
+  color: var(--title-text-color);
+  margin-bottom: 20px;
 }
 
-.social-icons-svg-social {
+.social-icon {
+  fill: var(--title-text-color);
   width: 20px;
   height: 20px;
-  fill: var(--title-text-color);
 }
