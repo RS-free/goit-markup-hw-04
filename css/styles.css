@@ -119,10 +119,6 @@ img {
   padding-bottom: 32px;
 }
 
-/* .site-nav .link.current {
-  color: var(--accent-text-color);
-} */
-
 /* контакти */
 .contact-header {
   display: flex;
@@ -266,35 +262,6 @@ img {
   width: 270px;
 }
 
-/* іконки на секції псевдоелемент*/
-/* .list-item::before {
-  display: block;
-  content: "";
-  height: 120px;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
-} */
-
-/* .icon-antenna::before {
-  background-image: url("../img/icons/antenna.svg");
-}
-
-.icon-clock::before {
-  background-image: url("../img/icons/clock.svg");
-}
-
-.icon-vector::before {
-  background-image: url("../img/icons/vector.svg");
-}
-
-.icon-astronaut::before {
-  background-image: url("../img/icons/astronaut.svg");
-} */
-
 /* іконки секцій зі спрайта */
 .story {
   display: flex;
@@ -354,6 +321,7 @@ img {
   box-shadow: var(--card-shadow);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  background-color: var(--title-text-color);
 }
 
 .name-position {
@@ -367,15 +335,6 @@ img {
 }
 
 /* соціальні мережі */
-
-/* .list-social-icons {
-  display: inlaine-flex;
-  align-items: center;
-} */
-
-/* .socials-item {
-  margin-left: 40px;
-} */
 
 .social-icons {
   display: inline-flex;
@@ -534,7 +493,7 @@ img {
 
 /* ФУТЕР */
 .footer {
-  width: 1600px;
+  /* width: 1600px; */
   margin-left: auto;
   margin-right: auto;
   background-color: #2f303a;
