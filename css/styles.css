@@ -92,6 +92,7 @@ img {
   color: var(--accent-text-color);
   text-decoration: none;
 }
+
 .studio {
   color: var(--main-text-color);
 }
@@ -127,6 +128,10 @@ img {
 }
 .contact-header .item + .item {
   margin-left: var(--margin);
+}
+
+.current {
+  color: var(--accent-text-color);
 }
 
 .link-current:hover,
@@ -335,7 +340,6 @@ img {
 }
 
 /* соціальні мережі */
-
 .social-icons {
   display: inline-flex;
 }
@@ -372,17 +376,13 @@ img {
 }
 
 /* постійні клієнти */
-/* .regular-customers {
-  padding-top: 92px;
-  padding-bottom: 92px;
-} */
-
 .information {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
 }
+
 .information .item-icon {
   flex-basis: calc((100% - 6 * var(--card-set-gap)) / 6);
   width: calc((100% - 6 * var(--card-set-gap)) / 6);
